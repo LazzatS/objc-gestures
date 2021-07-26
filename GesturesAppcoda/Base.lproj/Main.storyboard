@@ -104,32 +104,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Gesture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-Z6-bQX">
-                                <rect key="frame" x="67" y="100" width="280" height="40"/>
+                                <rect key="frame" x="154" y="100" width="106" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="dwe-ZM-QnR"/>
                                     <constraint firstAttribute="height" constant="40" id="szL-Yx-YWn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lju-YZ-4IL">
-                                <rect key="frame" x="156.08571428537857" y="234" width="99.999999999999773" height="99.999999999999773"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QzN-fB-ao2">
+                                <rect key="frame" x="154.80952380954591" y="399.93197278912749" width="99.999999999999318" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qVp-Kz-0fT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lZ7-Z6-bQX" firstAttribute="centerX" secondItem="Ckv-q9-s4p" secondAttribute="centerX" id="2fk-oZ-IyE"/>
-                            <constraint firstItem="lZ7-Z6-bQX" firstAttribute="top" secondItem="Ckv-q9-s4p" secondAttribute="top" constant="100" id="P6l-Y0-ToE"/>
-                            <constraint firstItem="lZ7-Z6-bQX" firstAttribute="centerX" secondItem="Lju-YZ-4IL" secondAttribute="centerX" id="Zt5-t7-yae"/>
-                            <constraint firstItem="Lju-YZ-4IL" firstAttribute="top" secondItem="lZ7-Z6-bQX" secondAttribute="bottom" constant="94" id="egc-Gq-2XS"/>
+                            <constraint firstItem="lZ7-Z6-bQX" firstAttribute="top" secondItem="qVp-Kz-0fT" secondAttribute="top" constant="56" id="4Ft-hI-7Ns"/>
+                            <constraint firstItem="lZ7-Z6-bQX" firstAttribute="centerX" secondItem="Ckv-q9-s4p" secondAttribute="centerX" id="Adp-l1-xIk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="first" id="psw-8L-yd4"/>
                     <connections>
-                        <outlet property="testView" destination="Lju-YZ-4IL" id="Hz9-ay-AkY"/>
+                        <outlet property="testView" destination="QzN-fB-ao2" id="nqp-Cs-UOz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K20-2Z-P8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -192,8 +190,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TapViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIView *testView;
 @end
 
 NS_ASSUME_NONNULL_END
