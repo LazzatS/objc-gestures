@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="1068" y="146"/>
         </scene>
-        <!--Swipe-->
+        <!--Swipe ViewController-->
         <scene sceneID="Yq1-zx-PAO">
             <objects>
-                <viewController id="cGi-xi-SGk" customClass="SwipeViewController" sceneMemberID="viewController">
+                <viewController title="Swipe ViewController" id="cGi-xi-SGk" customClass="SwipeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cfj-dz-Nkg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +80,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="liE-6a-Ano">
+                                <rect key="frame" x="0.0" y="190" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe left or right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-br-aeA">
+                                        <rect key="frame" x="131" y="40" width="152" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRJ-pz-E21">
+                                <rect key="frame" x="0.0" y="322" width="414" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe up or down" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d7-di-fOq">
+                                        <rect key="frame" x="130" y="88" width="154" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dKt-WB-C7B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -90,10 +118,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Swipe" image="first" id="IOx-HK-BQU"/>
+                    <connections>
+                        <outlet property="viewBlack" destination="eRJ-pz-E21" id="9qm-YM-cI5"/>
+                        <outlet property="viewOrange" destination="liE-6a-Ano" id="s0z-Qf-CNe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UU-uN-sop" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1038" y="146"/>
+            <point key="canvasLocation" x="-1039.1304347826087" y="145.98214285714286"/>
         </scene>
         <!--Tap View Controller-->
         <scene sceneID="jL3-D7-wjt">

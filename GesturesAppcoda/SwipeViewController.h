@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SwipeViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIView *viewOrange;
+@property (weak, nonatomic) IBOutlet UIView *viewBlack;
 @end
 
 NS_ASSUME_NONNULL_END
