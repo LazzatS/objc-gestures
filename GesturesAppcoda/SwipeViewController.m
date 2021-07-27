@@ -36,6 +36,8 @@
     swipeDownBlack.direction = UISwipeGestureRecognizerDirectionDown;
     [self.viewBlack addGestureRecognizer:swipeDownBlack];
     
+    [self.resetButton addTarget:self action:@selector(tapResetButton:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void) slideToRightWithGestureRecognizer: (UISwipeGestureRecognizer *)gestureRecognizer {
@@ -58,6 +60,18 @@
     [UIView animateWithDuration:0.5 animations:^{
         self.viewBlack.frame = CGRectOffset(self.viewBlack.frame, 0.0, 180.0);
     }];
+}
+- (IBAction)tapResetButton:(id)sender {
+    CGPoint currentOriginOrange = CGPointMake(self.viewOrange.frame.origin.x, self.viewOrange.frame.origin.y);
+    CGPoint currentOriginBlack = CGPointMake(self.viewBlack.frame.origin.x, self.viewBlack.frame.origin.y);
+    if (currentOriginOrange.x != 0.0 || currentOriginBlack.y != 322.0) {
+        NSLog(@"no");
+        currentOriginOrange.x = 0;
+        currentOriginBlack.y = 322;
+    }
+    self.viewOrange.frame = CGRectMake(currentOriginOrange.x, currentOriginOrange.y, 414, 100);
+    self.viewBlack.frame = CGRectMake(currentOriginBlack.x, currentOriginBlack.y, 414, 200);
+    
 }
 
 @end

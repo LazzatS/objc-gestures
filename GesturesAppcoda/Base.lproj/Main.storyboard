@@ -108,6 +108,17 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kU-yj-UMm">
+                                <rect key="frame" x="177" y="635" width="67" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapResetButton:" destination="cGi-xi-SGk" eventType="touchUpInside" id="IfN-cp-qfk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dKt-WB-C7B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,6 +130,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Swipe" image="first" id="IOx-HK-BQU"/>
                     <connections>
+                        <outlet property="resetButton" destination="4kU-yj-UMm" id="RsD-2i-ZKd"/>
                         <outlet property="viewBlack" destination="eRJ-pz-E21" id="9qm-YM-cI5"/>
                         <outlet property="viewOrange" destination="liE-6a-Ano" id="s0z-Qf-CNe"/>
                     </connections>
@@ -221,6 +233,9 @@
         <image name="first" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
